@@ -45,6 +45,7 @@ const (
 
 	//内容审核
 	commandResultNotify = "ContentCallback.ResultNotify" //审核结果回调
+	commandPortraitSet               = "Profile.CallbackPortraitSet"
 )
 
 const (
@@ -71,6 +72,7 @@ const (
 	EventAfterGroupDestroyed
 	EventAfterGroupInfoChanged
 	EventResultNotify
+	EventPortraitSet
 )
 
 const (
@@ -285,6 +287,9 @@ func (c *callback) parseCommand(command string, body []byte) (event Event, data 
 	case commandResultNotify:
 		event = EventResultNotify
 		data = &ResultNotify{}
+	case commandPortraitSet:
+		event = EventPortraitSet
+		data = &AfterPortraitSet{}
 	default:
 		return 0, nil, errors.New("invalid callback command")
 	}
