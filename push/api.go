@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/inkrtech/tencent-im/internal/core"
-	"github.com/inkrtech/tencent-im/internal/enum"
-	"github.com/inkrtech/tencent-im/internal/types"
+	"github.com/scpzc/tencent-im/internal/core"
+	"github.com/scpzc/tencent-im/internal/enum"
+	"github.com/scpzc/tencent-im/internal/types"
 )
 
 const (

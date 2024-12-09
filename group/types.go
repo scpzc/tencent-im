@@ -7,7 +7,7 @@
 
 package group
 
-import "github.com/inkrtech/tencent-im/internal/types"
+import "github.com/scpzc/tencent-im/internal/types"
 
 type (
 	// 拉取App中的所有群组（请求）

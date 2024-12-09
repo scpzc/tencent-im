@@ -8,9 +8,9 @@
 package profile
 
 import (
-	"github.com/inkrtech/tencent-im/internal/core"
-	"github.com/inkrtech/tencent-im/internal/entity"
-	"github.com/inkrtech/tencent-im/internal/enum"
+	"github.com/scpzc/tencent-im/internal/core"
+	"github.com/scpzc/tencent-im/internal/entity"
+	"github.com/scpzc/tencent-im/internal/enum"
 )
 
 type Profile struct {

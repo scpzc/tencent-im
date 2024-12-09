@@ -10,7 +10,7 @@ package group
 import (
 	"errors"
 
-	"github.com/inkrtech/tencent-im/internal/entity"
+	"github.com/scpzc/tencent-im/internal/entity"
 )
 
 var (

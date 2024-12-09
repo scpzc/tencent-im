@@ -8,8 +8,8 @@
 package profile
 
 import (
-	"github.com/inkrtech/tencent-im/internal/enum"
-	"github.com/inkrtech/tencent-im/internal/types"
+	"github.com/scpzc/tencent-im/internal/enum"
+	"github.com/scpzc/tencent-im/internal/types"
 )
 
 type (

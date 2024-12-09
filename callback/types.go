@@ -7,7 +7,7 @@
 
 package callback
 
-import "github.com/inkrtech/tencent-im/internal/types"
+import "github.com/scpzc/tencent-im/internal/types"
 
 type (
 	BaseResp struct {
@@ -328,12 +328,12 @@ type (
 	// AfterPortraitSet 个人资料修改之后回调
 	AfterPortraitSet struct {
 		CallbackCommand string `json:"CallbackCommand"`  // 回调命令
-		OperatorAccount  string `json:"Operator_Account"`          // 触发更新操作的用户的 UserID
-		FromAccount      string `json:"From_Account"`             // 更新用户资料的用户的 UserID
-		EventTime    int `json:"EventTime"`     // 毫秒时间戳
+		OperatorAccount string `json:"Operator_Account"` // 触发更新操作的用户的 UserID
+		FromAccount     string `json:"From_Account"`     // 更新用户资料的用户的 UserID
+		EventTime       int    `json:"EventTime"`        // 毫秒时间戳
 		ProfileItem     []struct {
-			Tag  string    `json:"Tag"`
-			Value   string `json:"Value"`
+			Tag   string `json:"Tag"`
+			Value string `json:"Value"`
 		} `json:"ProfileItem"` //更新成功的用户资料列表
 	}
 
