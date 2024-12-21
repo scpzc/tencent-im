@@ -53,7 +53,7 @@ const (
 	commandModifyGroupUserTags = "modify_user_info"
 	commandModifyGroupAdmin    = "modify_admin"
 
-	batchGetGroupsLimit = 50 // 批量获取群组限制
+	batchGetGroupsLimit = 10000 // 批量获取群组限制
 )
 
 type API interface {
