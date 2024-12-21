@@ -409,8 +409,10 @@ func (a *api) PullGroups(arg *PullGroupsArg, fn func(ret *FetchGroupsRet)) (err 
 
 		if ret.HasMore {
 			next = ret.Next
+			time.Sleep(time.Second)
+		} else {
+			break
 		}
-		time.Sleep(time.Second)
 	}
 
 	return
