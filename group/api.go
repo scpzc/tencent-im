@@ -9,6 +9,7 @@ package group
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/scpzc/tencent-im/internal/conv"
 	"github.com/scpzc/tencent-im/internal/core"
@@ -409,6 +410,7 @@ func (a *api) PullGroups(arg *PullGroupsArg, fn func(ret *FetchGroupsRet)) (err 
 		if ret.HasMore {
 			next = ret.Next
 		}
+		time.Sleep(time.Second)
 	}
 
 	return
