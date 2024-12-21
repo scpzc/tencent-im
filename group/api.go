@@ -408,7 +408,6 @@ func (a *api) PullGroups(arg *PullGroupsArg, fn func(ret *FetchGroupsRet)) (err 
 
 		if ret.HasMore {
 			next = ret.Next
-			break
 		}
 	}
 
