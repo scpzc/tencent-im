@@ -12,9 +12,9 @@ import "github.com/scpzc/tencent-im/internal/types"
 type (
 	// 拉取App中的所有群组（请求）
 	fetchGroupIdsReq struct {
-		Limit int    `json:"Limit,omitempty"` // （选填）本次获取的群组 ID 数量的上限，不得超过 10000。如果不填，默认为最大值 10000
-		Next  int    `json:"Next,omitempty"`  // （选填）群太多时分页拉取标志，第一次填0，以后填上一次返回的值，返回的 Next 为0代表拉完了
-		Type  string `json:"Type,omitempty"`  // （选填）如果仅需要返回特定群组形态的群组，可以通过 Type 进行过滤，但此时返回的 TotalCount 的含义就变成了 App 中属于该群组形态的群组总数。不填为获取所有类型的群组。
+		Limit int    `json:"Limit"` // （选填）本次获取的群组 ID 数量的上限，不得超过 10000。如果不填，默认为最大值 10000
+		Next  int    `json:"Next"`  // （选填）群太多时分页拉取标志，第一次填0，以后填上一次返回的值，返回的 Next 为0代表拉完了
+		Type  string `json:"Type"`  // （选填）如果仅需要返回特定群组形态的群组，可以通过 Type 进行过滤，但此时返回的 TotalCount 的含义就变成了 App 中属于该群组形态的群组总数。不填为获取所有类型的群组。
 	}
 
 	// 拉取App中的所有群组（响应）
